@@ -17,7 +17,7 @@ const TodoList = ({ id, todo, underline, isChecked }) => {
     if (checked && underline) {
       dispatch(updateTodo(id, todo));
     }
-  }, [checked]);
+  }, [checked, dispatch, id, todo]);
 
   const onDelete = () => {
     dispatch(deleteTodo(id));
