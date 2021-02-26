@@ -1,0 +1,38 @@
+:root {
+  --backgroundColor: #ebebfb;
+  --btnColor: #5f5fd8;
+  --grayColor: #7c7c84;
+  --textColor: #747c94;
+  --spacing: 20px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  color: var(--textColor);
+  line-height: 1.2;
+  background-color: var(--backgroundColor);
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  width: 600px;
+  min-height: 450px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
+}
+
+.container .container__heading {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing);
+}
+
+@media screen and (max-width: 876px) {
+  .container {
+    width: 400px;
+  }
+}
